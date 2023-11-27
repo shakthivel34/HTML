@@ -1,0 +1,27 @@
+<htmL>
+    <head>
+
+    </head>
+    <h1>Prompt message</h1>
+   
+
+    <body>
+        
+        <button onclick="yo()">Click To enter your name</button>
+        <p id="a1"></p>
+        <script>
+            function yo()
+            {
+            var name=prompt("Enter your name: ");
+            if(name==null || name=="")
+            {
+                document.getElementById("a1").innerHTML="you did not enter anything.Please enter your name again";
+            }
+            else
+            {
+                document.getElementById("a1").innerHTML="you entered" +name;
+            }
+        }
+        </script>
+    </body>
+</htmL>

@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function person(firstname,lastname)
+            {
+                this.firstname=firstname;
+                this.lastname=lastname;
+
+                if(!new.target)
+                {
+                    return new person(firstname,lastname);
+                }
+
+            }
+            let person=person("Shakthi","vel");
+            console.log(person.firstname);
+        </script>
+    </body>
+</html>

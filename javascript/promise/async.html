@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script>
+            async function f(){
+                console.log('async func')
+                return Promise.resolve(1);
+            }
+            f().then(function(result){
+                console.log(result)
+            })
+        </script>
+    </body>
+</html>

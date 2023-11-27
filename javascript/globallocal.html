@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <script>
+        let greet="hello"  //global variable // without let or var ; greet or msg is global variable
+        function myfunction()
+        {
+            let msg="JAva Script!"; //local variable
+            document.getElementById("p1").innerHTML=greet+msg;
+        }
+        myfunction();
+        document.getElementById("p2").innerHTML=greet;
+        document.getElementById("p3").innerHTML=greet;
+         </script>
+         </body>
+
+</html>

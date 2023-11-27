@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let countvalue=new Promise(function(resolve,reject)
+            {
+                reject("Promise Rejected")
+            }
+            );
+            countvalue.then
+            (
+                function successvalue(result)
+                {
+                    console.log("Success block: "+result);
+                }
+            )
+            .catch
+            (
+                function errorvalue(result)
+                {
+                    console.log("Catch block: "+result);
+                }
+                    )   
+                    </script>
+    </body>
+</html>

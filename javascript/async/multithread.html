@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <Script>
+            function greet(name,callback)
+            {
+                console.log("HI"+" "+name);
+                callback();
+                console.log("completed")
+            }
+            function callme()
+            {
+                console.log("i am callback function");
+            }
+            greet("peter",callme);
+        </Script>
+    </body>
+</html>

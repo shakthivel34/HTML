@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <script>
+            let cities=["mumbai","chennai","bangalore"];
+            document.getElementById('p1').innerHTML=cities;
+
+            cities[3]="kolkata";
+            document.getElementById('p2').innerHTML=cities;
+            
+            cities[cities.length]="london";
+            document.getElementById('p3').innerHTML=cities;
+
+            cities[8]="pune";
+            cities.push("coimbatore"); //push adds the element at the end
+            document.getElementById('p4').innerHTML=cities;
+
+            cities.unshift("chennai");
+            cities.unshift("chennai2","chennai3");
+            document.getElementById('p5').innerHTML=cities;
+            document.getElementById("p6").innerHTML=cities.slice(1,4)+","+cities.slice(5,10);
+
+
+
+
+        </script>
+    </body>
+</html>

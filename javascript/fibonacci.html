@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            function fibo(n,f1,f2)
+            {
+                if(n==0)
+                {
+                    console.log("end");
+                }
+                else
+                {
+                    f3=f1+f2;
+                    console.log(f1);
+                    f1=f2;
+                    f2=f3;
+                    fibo(n-1,f1,f2);
+                }
+             }
+             n =prompt("Enter the number")
+                fibo(n,0,1);
+        </script>
+    </body>
+</html>

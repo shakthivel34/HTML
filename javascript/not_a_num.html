@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            let sum=0;
+            let number=0;
+
+            while (number >= 0)
+            {
+                sum +=number;
+                number=parseInt(prompt("Enter the number: "));
+                
+                if (isNaN(number)) //Not a number =NAn 
+                {
+                    console.log("You entered a string.");
+                    number=0;
+                    continue;
+                }
+            }
+            console.log(`The sum is ${sum}.` );
+        </script>
+    </body>
+</html>

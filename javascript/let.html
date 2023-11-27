@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> JS 1</title>
+
+    </head>
+    <body>
+        <button onclick="check()">Click To enter your name</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <script>
+           let name="sri" 
+           let num="111"
+           let boolean=true
+           document.getElementById("p1").innerHTML=name;
+           document.getElementById("p2").innerHTML=num;
+           document.getElementById("p3").innerHTML=boolean;
+           function check()
+           {
+            var x=10;
+            if (true)
+            {
+                let y=100; // local variable-Active within the block
+                document.getElementById("p4").innerHTML="LEt variable: "+y
+            }
+            document.getElementById("p5").innerHTML="LEt variable: "+y;
+           }
+        </script>
+        <h2>welcome to javaScript</h2>
+    </body>
+</html>

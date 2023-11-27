@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <body>
+            <script>
+                var decoration=
+                {
+                color:'red'
+                };
+                var circle=Object.create(decoration);
+                circle.radius=10;
+
+                for(const prop in circle)
+                {
+                    console.log(prop);
+                }
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            let x=new Promise(function(resolve,reject)
+            {
+                resolve("Promise solved")
+            }
+            );
+            //executes when promise is resolved succesfully
+            x
+            .then(function successvalue(result)
+            {
+                console.log(result);
+            }
+            )
+            .then (function successvalue()
+            {
+                console.log("You can call multiple functions this way")
+            }
+            );
+        </script>
+    </body>
+</html>

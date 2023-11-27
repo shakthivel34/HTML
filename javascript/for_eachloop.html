@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            var arr=[];
+            arr[2]=3;
+
+            for(let i=0;i<arr.length;i++) //set the third element to 3,other elements are undefined
+            {
+                console.log(arr[i]);
+            }
+
+            for(const key in arr) //does not print the undefined value
+            {
+                console.log(arr[key]);
+            }
+        </script>
+    </body>
+</html>

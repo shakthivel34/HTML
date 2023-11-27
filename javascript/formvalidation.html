@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+            function validateform()
+            {
+                var name=document.myform.name.value;
+                var password=document.myform.password.value;
+                var secondpassword=document.myform.secondpassword.value;
+
+                if(name==null || name=="")
+                {
+                    alert("NAme cannot be empty");
+                    return false;
+                }
+                else if(password.length<6)
+                {
+                    alert("Password must be atleast six characters");
+                    return false;
+                }
+                else if(password==secondpassword)
+                {
+                    return true;
+                }
+                else if(password!=secondpassword)
+                {
+                    alert("Password must be the same");
+                    return false;
+                }
+            }
+       </script>
+          <form name="myform" method="post" action="" onsubmit="return validateform()">
+            Name:<input type="text" name="name"><br>
+            Password:<input type="password" name="password"><br>
+            Re-Enter passWord:<input type="password" name="secondpassword"><br>
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>

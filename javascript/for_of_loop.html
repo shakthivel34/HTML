@@ -1,0 +1,55 @@
+<html>
+    <body>
+        <script>
+            const students=['John','Sara','Jack'];
+            for(let element of students)    //for of prints the values in index
+            {
+                console.log(element);
+            }
+
+            for(const obj in students) // for in pints the index value
+            {
+                console.log(obj);
+                console.log(students[obj]) //prints the value in the index
+            }
+
+            const string='Suci';
+            for (let i of string)
+            {
+                console.log(i);
+            }
+
+            const set=new Set([1,2,3,2,4]);
+            for (let i of set)
+            {
+                console.log(i);
+            }
+
+            let map=new Map();
+
+            map.set('name','Jack');
+            map.set('age','27');
+
+            for(let [key,value] of map)
+            {
+                console.log(key+'-'+value);
+            }
+
+            const person={
+                'stud_id':12,
+                'stud_name':'ganga',
+                'mark':76
+            }
+            for (const obj in person)
+            {
+                console.log(obj+'-'+person[obj])
+            }
+
+            
+
+
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<htmL>
+    <head>
+
+    </head>
+    <body>
+        <h1>Demo: confirm()</h1>
+        <button onclick="save()">Save data</button>
+        <p id="1"></p>
+    </body>
+    <script>
+        function save()  //open close bracket is mandatory
+        {
+          var userpreference;
+          if (confirm("Do you want to SAVE Changes?")==true)
+          {
+            userpreference="Data Saved Successfully";
+          }
+          else
+          {
+            userpreference="Data not saved"
+          }
+          document.getElementById("1").innerHTML=userpreference;
+
+        }
+    </script>
+</htmL>

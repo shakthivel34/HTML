@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>
+            Contact forms
+        </title>
+        <style>
+            body
+            {
+                background-image: url(image/download.jpg);
+            background-size: cover;
+
+               
+            }
+            
+        </style>
+        <body background="image/download.jpg" >
+            <form action="form.html" method="get" style="">
+                <table style="text-align: center;">
+                    <tr>
+                        <td>
+                            <label for="Username" >Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="uemail" name="useremail">
+                            <button type="button">Check</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                        </td>
+                        <td>
+                        <input type="number" name="userage" id="age" size="2" maxlength="2">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Country</label>
+                        </td>
+                        <td>
+                            <input type="text" value="India" name="country" disabled>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="res">Resume</labrl>
+                    </td>
+                    <td>
+                        <input type="file" id="res">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Hobbies</label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" checked>Cricket
+                        </label>
+                        <label>
+                            <input type="checkbox" checked>Football
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" value="f" name="gender">Female
+                        </label>
+                        <label>
+                            <input value="m" type="radio" name="gender">male
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="City">City</label>
+                    </td>
+                    <td>
+                        <select id="city" name="city">
+                            <option disabled selected>--Choose City--</option>
+                            <optgroup label="metros">
+                                <option>chennai</option>
+                                <option>Bangalore</option>
+                                <option>Mumbai</option>
+                            </optgroup>
+                            <optgroup label="Country">
+                                <option>India</option>
+                                <option>Japan</option>
+                                <option>France</option>
+                            </optgroup>
+                         </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Address</label>
+                    </td>
+                    <td>
+                    <textarea rows="4" cols="40"></textarea>
+                </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" style="color: green;">
+                        <input type="reset" value="Reset" style="color: red;">
+                    </td>
+                </tr>
+
+
+                </table>
+            </form>
+        </body>
+    </head>
+</html>

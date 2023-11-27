@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            var greeting ="hi";
+            var msg={
+                greeting:"hello"
+            }
+            function say(name){
+                console.log(this.greeting+' '+name)
+            }
+            say.call(this,'john')
+            say.call(msg,'srii')
+        </script>
+    </body>
+</html>

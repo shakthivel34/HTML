@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            function showtime()
+            {
+                let datetime=new Date();
+                let time=datetime.toLocaleTimeString();
+                console.log(time);
+                setTimeout(showtime,3000)
+            }
+
+            showtime();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            function person()
+            {
+                this.name="Jack";
+                this.age=25;
+                this.sayname=function()
+                {
+                    console.log(this.age);
+
+                   // function innerfunc() //inner function will not work so we use arrow function
+                   let innerfunc=()=>
+                    {
+                        console.log(this.age);
+                        console.log(this);
+                    }
+                    innerfunc();
+                }
+            }
+            let x=new person();
+            x.sayname();
+        </script>
+    </body>
+</html>

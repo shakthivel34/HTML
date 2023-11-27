@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            let countdown=function f(fromnumber) //named function expression
+            {
+                console.log(fromnumber);
+                let nextnumber=fromnumber-1;
+
+                if (nextnumber>0)
+                {
+                    f(nextnumber);  // f is a named function
+                }
+            }
+
+            let newyearcount=countdown;
+            countdown=null;
+            newyearcount(10);
+        </script>
+    </body>
+</html>

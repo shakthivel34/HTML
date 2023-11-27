@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            //Arrow function with no arguments
+            let greet =() => console.log("hello");
+            greet(); //Hello
+
+            //Arrow functions with one arguments
+            let greet1 = x =>console.log(x);
+            greet1("Hello");
+
+            //Arrow function as an expression
+            let age=5;
+
+            let welcome =(age<18) ?
+            ()=> console.log("baby") :
+            ()=> console.log("Adult")
+            welcome();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Arithmetic operators</h1>
+    </body>
+    <p>x=5,y=10,z;</p>
+    <p id="p1">x+y=</p>
+    <p id="p2">y-x=</p>
+    <p id="p3">x*y=</p>
+    <p id="p4">y/x=</p>
+    <p id="p5">x%2=</p>
+    <script>
+        let x=5,y=10;
+        let z=x+y;
+        document.getElementById("p1").innerHTML+=z; // + is used because to print z along with x and y in P
+         z=y-x;
+        document.getElementById("p2").innerHTML+=z;
+        z=x*y;
+        document.getElementById("p3").innerHTML+=z;
+        z=y/x;
+        document.getElementById("p4").innerHTML+=z;
+        z=x%y;
+        document.getElementById("p5").innerHTML+=z;
+
+
+    </script>
+    
+</html>

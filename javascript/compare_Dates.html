@@ -1,0 +1,20 @@
+<htmL>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            var date1=new Date("4-1-2015");
+            var date2=new Date("4-2-2015");
+            if (date1>date2)
+            {
+                document.getElementById("p1").innerHTML=date1.toDateString()+" is greater than"+date2.toDateString(); //converts the date to string
+            }
+            else
+            {
+                document.getElementById("p2").innerHTML=date1.toDateString()+" is less than"+date2.toDateString();
+            }
+
+
+        </script>
+    </body>
+</htmL>
